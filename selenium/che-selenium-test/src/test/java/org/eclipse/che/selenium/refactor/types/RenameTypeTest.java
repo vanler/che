@@ -45,9 +45,9 @@ import org.testng.annotations.Test;
 public class RenameTypeTest {
   private static final Logger LOG = LoggerFactory.getLogger(RenameTypeTest.class);
   private static final String nameOfProject =
-      NameGenerator.generate(RenameTypeTest.class.getName(), 2);
+      NameGenerator.generate(RenameTypeTest.class.getSimpleName(), 2);
   private static final String pathToPackageInChePrefix =
-      nameOfProject + "/src" + "/main" + "/java" + "/renametype";
+      nameOfProject + "/src/main/java/renametype";
 
   private String pathToCurrentPackage;
   private String contentFromInA;
