@@ -14,8 +14,7 @@
 <suite name="Multi-thread Eclipse Che tests"
   verbose="10"
   parallel="classes"
-  thread-count="4">
-
+  thread-count="3">
     <test name="all">
         <method-selectors>
             <method-selector>

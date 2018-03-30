@@ -13,11 +13,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Eclipse Che selenium tests"
   verbose="10"
-  parallel="classes">
+  parallel="classes"
+  thread-count="3">
   <suite-files>
     <suite-file path="src/test/resources/suites/CheOneThreadTestsSuite.xml"/>
-  </suite-files>
-  <suite-files>
     <suite-file path="src/test/resources/suites/CheMultiThreadTestsSuite.xml"/>
   </suite-files>
 </suite>
